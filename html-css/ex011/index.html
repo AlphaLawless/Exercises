@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou
+        simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <!--Dentro da Tag picture, vai haver vários formatos diferentes de images-->
+    <!--Criando o source midia type e dentro colocar o tamanho para mudar e image que vai mudar-->
+    <!--Cada source respeita a hieraquia do HTML, então temos que criar acima.-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem grande">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>
+        Vamos agora aprender a reproduizr aúdios em HTML5
+    </p>
+    <audio src="midia/DNBHL.mp3" controls></audio>
+
+    <p>
+        Segundo jeito de reprodução de áudio
+    </p>
+    <audio preload="metadata" controls>
+        <source src="midia/Fabyanna.wav" type="audio/wav">
+        <source src="midia/Fabyanna.ogg" type="audio/ogg">
+        <source src="midia/Fabyanna.mp3" type="audio/mpeg">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. 
+            <a href="midia/Fabyanna.wav" type="audio/wav">
+                Clique aqui para baixar o arquivo
+            </a>
+        </p>
+    </audio>
+</body>
+</html>
