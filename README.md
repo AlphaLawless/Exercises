@@ -1,4 +1,6 @@
-# Exercicios
- Repositório de exercícios
+# Exercise
+ Exercise repository
  
- Aqui podemos ver todos os exercícios que fiz ao longo da minha caminhada como programador
+ In this repository, there are my first exercises.
+
+
