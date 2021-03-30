@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: lightgreen;
+            font: normal 18pt Arial;
+        }
+        input[type=text] {
+            width: 130px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            font-size: 16px;
+            box-sizing: border-box;
+            border: 2px solid red;
+            background-position: 10px 10px;
+            background-repeat:  no-repeat;
+            transition: width 0.4s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 30%;
+        }
+        input[type=button] {
+            height: 50px;
+            width: 80px;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+            border: 2px solid #db1919;
+            transition-duration: 0.4s;
+            align-items: center;
+            font: normal 14pt Arial;
+        }
+        input[type=button]:hover {
+            background: #db1919;
+            color: white;
+        }
+    </style>
+    <title>Naciolidade</title>
+</head>
+<body>
+    <h1>Identidade Nacional</h1>
+    Diga qual o seu pais <input type="text" name="txt" id="txt">
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function clicar() {
+            var texto = document.querySelector('input#txt')
+            var resultado = document.querySelector('div#res')
+            var resposta = String(texto.value)
+            
+            if (resposta == 'Brasil') {
+                resultado.innerHTML = 'Você é Brasileiro'
+            }else {
+                resultado.innerHTML = 'Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
