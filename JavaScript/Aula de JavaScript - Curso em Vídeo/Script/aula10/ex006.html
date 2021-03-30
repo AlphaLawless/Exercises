@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        div#area {
+            font: normal 20px Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseover="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <script>
+        /* Com a variável sendo fora das functions
+           podemos usar ela de forma que não precise repetir
+           mas não é uma tão recomendada. */
+        var area = document.getElementById('area')
+        
+        function clicar() {
+            area.innerText = 'Clicou!'
+            area.style.background = 'red'
+        }
+        function entrar() {
+            area.innerText = 'Entrou!'
+        }
+        function  sair() {
+            area.innerText = 'Saiu!'
+            area.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
