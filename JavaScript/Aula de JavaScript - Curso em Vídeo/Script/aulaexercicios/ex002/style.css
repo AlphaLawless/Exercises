@@ -1,0 +1,52 @@
+body {
+  background: linear-gradient(to right, #2244af , #342299);
+  background-attachment: fixed;
+  font: normal 15pt Arial;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+div {
+  text-align: center;
+  padding: 8px
+}
+
+input[type="button"] {
+  background-color: white;
+  color: black;
+  border: none;
+  width: 250px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #555555;
+  cursor: pointer;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+input[type="button"]:hover {
+  background-color: #555555;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: #fff;
+}
+
+div#res {
+  margin: auto;
+}
